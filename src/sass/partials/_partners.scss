@@ -1,0 +1,20 @@
+.partners {
+  background: url(/images/partners-bg.png) no-repeat center/contain;
+  padding: 5rem 0;
+
+  @media (max-width: $desktop-br) {
+    padding: 0;
+    background-size: 100%;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__logo {
+    height: 100%;
+    padding: 1.5rem;
+  }
+}

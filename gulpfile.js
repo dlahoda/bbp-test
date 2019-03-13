@@ -40,7 +40,7 @@ gulp.task('js:compile', function(){
 });
 
 gulp.task('clean:build', function(){
-  return del(['build/*']);
+  return del(['build/*', '!build/images', '!build/fonts']);
 });
 
 gulp.task('watch', function(){

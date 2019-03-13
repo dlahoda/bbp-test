@@ -1,0 +1,35 @@
+.hero {
+  background-color: $color-primary;
+
+  &__box {
+    max-width: $desktop-br;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 6rem 0;
+    margin: 0 auto;
+    @media (min-width: 960px) {
+      transform: translateX(-15%)
+    }
+
+    @media (max-width: $desktop-br) {
+      padding: 2rem 0;
+    }
+  }
+
+  &__img {
+    max-width:100%;
+    height:auto;
+
+    &-extra {
+      position: absolute;
+      right: 0;
+      top: 5%;
+      transform: translateX(50%);
+
+      @media (max-width: 960px) {
+        display: none;
+      }
+    }
+  }
+}
