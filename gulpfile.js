@@ -55,3 +55,9 @@ gulp.task('dev', gulp.series(
   gulp.parallel('watch', 'server')
   )
 );
+
+gulp.task('build:prod', gulp.series(
+  'clean:build',
+  gulp.parallel('templates:compile', 'styles:compile', 'js:compile'),
+  )
+);

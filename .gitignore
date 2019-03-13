@@ -61,4 +61,6 @@ typings/
 .next
 
 #Build directory
-build
+build/js
+build/styles
+index.html
